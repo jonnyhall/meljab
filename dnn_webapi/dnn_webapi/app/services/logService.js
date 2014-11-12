@@ -16,7 +16,7 @@ app.factory('logService', ['$http', function ($http) {
     };
 
     var _updatelog = function (callback, log) {
-        var log = { "ItemID": log.ItemID, "Entry": log.Entry, "UserName": log.UserName };
+        var log = { "ItemID": log.ItemID, "EntryDate": log.EntryDate, "Entry": log.Entry, "UserName": log.UserName };
         $http.put(serviceBase, log).success(callback);
     };
 

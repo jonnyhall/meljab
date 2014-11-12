@@ -29,7 +29,7 @@ app.controller('logController', ['$scope', '$location',  'logService', function 
             data: 'logData',
             columnDefs: [
                 { field: 'EntryDate', displayName: 'EntryDate', width: '15%' },
-                { field: 'UserName', displayName: 'UserName', width: '15%' },
+                { field: 'UserName', displayName: 'UserName', width: '15%' },                 
                 { field: 'Entry', displayName: 'Entry', width: '50%', height: '50%' },
                 { displayName: 'Options', cellTemplate: '<input type="button" ng-click="setScope(row.entity,\'edit\')" name="edit"  value="Edit">&nbsp;<input type="button" ng-click="Deletelog(row.entity.ItemID)"  name="delete"  value="Delete">', width: '25%' }
             ]

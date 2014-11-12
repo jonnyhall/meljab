@@ -121,8 +121,10 @@ namespace domain_meljab.Concrete
                            if (_logEntry.EntryDate == null)
                                _logEntry.EntryDate = DateTime.Now;
 
+
+                           _logEntry.EntryDate = logEntry.EntryDate;
                            _logEntry.Entry = logEntry.Entry;
-                          
+                           
                            db.SaveChanges();
                        }
                        else
