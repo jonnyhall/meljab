@@ -1,0 +1,7 @@
+C:\github\meljab\MeljabUtility\MeljabUtility\bin\Debug\MeljabUtility.exe.config
+C:\github\meljab\MeljabUtility\MeljabUtility\bin\Debug\MeljabUtility.exe
+C:\github\meljab\MeljabUtility\MeljabUtility\bin\Debug\MeljabUtility.pdb
+C:\github\meljab\MeljabUtility\MeljabUtility\obj\Debug\MeljabUtility.csprojResolveAssemblyReference.cache
+C:\github\meljab\MeljabUtility\MeljabUtility\obj\Debug\MeljabUtility.exe
+C:\github\meljab\MeljabUtility\MeljabUtility\obj\Debug\MeljabUtility.pdb
+C:\github\meljab\MeljabUtility\MeljabUtility\bin\Debug\BatchFiles\restart.bat

@@ -1,0 +1,17 @@
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 800px; 
+    height: 300px;
+}
+.ngTopPanel{
+    height:auto !important;
+}
+.ngViewport{
+    height:auto !important;
+}
+.ngCanvas, .ngViewport, .ngRow, .ngFooterPanel, .ngTopPanel   {
+   width: 100% !important;
+}
+.ngRow {
+   border-bottom:none !important;
+}

@@ -1,0 +1,1 @@
+C:\dnnMeljab\dnn_webapi\dnn_webapi.Tests\obj\Debug\dnn_webapi.Tests.csprojResolveAssemblyReference.cache

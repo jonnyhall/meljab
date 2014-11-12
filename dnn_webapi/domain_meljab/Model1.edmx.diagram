@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2b8803c5df0e416493847c1de39a52de" Name="Diagram1">
+        <EntityTypeShape EntityType="dotnetnukeModel.aspnet_Applications" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.aspnet_Membership" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.aspnet_Profile" Width="1.5" PointX="7.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.aspnet_Roles" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.aspnet_SchemaVersions" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.aspnet_Users" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Affiliates" Width="1.5" PointX="5.25" PointY="189" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Announcements" Width="1.5" PointX="10.25" PointY="54.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_AnonymousUsers" Width="1.5" PointX="3" PointY="58" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Assemblies" Width="1.5" PointX="13" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Authentication" Width="1.5" PointX="5.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Banners" Width="1.5" PointX="5.25" PointY="192.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Blog_Blogs" Width="1.5" PointX="3" PointY="81.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Blog_Comments" Width="1.5" PointX="13" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Blog_Entries" Width="1.5" PointX="10.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Blog_Settings" Width="1.5" PointX="11.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Classification" Width="1.5" PointX="6" PointY="185.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_DesktopModules" Width="1.5" PointX="3.5" PointY="93.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Documents" Width="1.5" PointX="10.25" PointY="58.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_DocumentsSettings" Width="1.5" PointX="10.25" PointY="62.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_EventLog" Width="1.5" PointX="14.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_EventLogConfig" Width="1.5" PointX="12" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_EventLogTypes" Width="1.5" PointX="9.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_EventQueue" Width="1.5" PointX="0.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Events" Width="1.5" PointX="10.25" PointY="66.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_EventsCategory" Width="1.5" PointX="3" PointY="68.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_EventsLocation" Width="1.5" PointX="3" PointY="70.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_EventsMaster" Width="1.5" PointX="10.25" PointY="76.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_EventsNotification" Width="1.5" PointX="12.5" PointY="65.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_EventsPPErrorLog" Width="1.5" PointX="2.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_EventsSignups" Width="1.5" PointX="12.5" PointY="69.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_FAQs" Width="1.5" PointX="10.25" PointY="79" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_FAQsCategory" Width="1.5" PointX="13.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Feedback" Width="1.5" PointX="7.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_FeedbackList" Width="1.5" PointX="15.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Files" Width="1.5" PointX="5.25" PointY="82.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_FolderPermission" Width="1.5" PointX="5.25" PointY="77.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Folders" Width="1.5" PointX="3" PointY="77.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_grmRepositoryAttributes" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_grmRepositoryAttributeValues" Width="1.5" PointX="15.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_grmRepositoryCategories" Width="1.5" PointX="4.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_grmRepositoryComments" Width="1.5" PointX="15.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_grmRepositoryObjectCategories" Width="1.5" PointX="16.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_grmRepositoryObjects" Width="1.5" PointX="16.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_grmRepositoryObjectValues" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Help_Category" Width="1.5" PointX="17.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Help_TutorialCategory" Width="1.5" PointX="4.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Help_Tutorials" Width="1.5" PointX="6.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_HostSettings" Width="1.5" PointX="18.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_HtmlText" Width="1.5" PointX="10.25" PointY="82.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_IFrame_Parameters" Width="1.5" PointX="8.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Links" Width="1.5" PointX="10.25" PointY="85.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Lists" Width="1.5" PointX="18.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Media" Width="1.5" PointX="10.25" PointY="93.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_ModuleControls" Width="1.5" PointX="8" PointY="93.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_ModuleDefinitions" Width="1.5" PointX="5.75" PointY="93.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_ModulePermission" Width="1.5" PointX="13.25" PointY="83.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Modules" Width="1.5" PointX="8" PointY="81.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_ModuleSettings" Width="1.5" PointX="10.25" PointY="96.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_MyLog" Width="1.5" PointX="18.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Packages" Width="1.5" PointX="10.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_PackageTypes" Width="1.5" PointX="18.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Permission" Width="1.5" PointX="3" PointY="74" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_PortalAlias" Width="1.5" PointX="3" PointY="143.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_PortalDesktopModules" Width="1.5" PointX="3" PointY="89" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Portals" Width="1.5" PointX="0.75" PointY="79.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Profile" Width="1.5" PointX="6" PointY="89.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_ProfilePropertyDefinition" Width="1.5" PointX="3" PointY="151.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_RoleGroups" Width="1.5" PointX="3" PointY="156.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Roles" Width="1.5" PointX="5.25" PointY="116.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Schedule" Width="1.5" PointX="5.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_ScheduleHistory" Width="1.5" PointX="8" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_ScheduleItemSettings" Width="1.5" PointX="8" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_SearchCommonWords" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_SearchIndexer" Width="1.5" PointX="19.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_SearchItem" Width="1.5" PointX="10.25" PointY="99.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_SearchItemWord" Width="1.5" PointX="12.5" PointY="99.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_SearchItemWordPosition" Width="1.5" PointX="14.75" PointY="100.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_SearchWord" Width="1.5" PointX="10.25" PointY="107.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_SiteLog" Width="1.5" PointX="3" PointY="159.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Skins" Width="1.5" PointX="3" PointY="163.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_SurveyOptions" Width="1.5" PointX="12.5" PointY="103.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_SurveyResults" Width="1.5" PointX="14.75" PointY="104" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Surveys" Width="1.5" PointX="10.25" PointY="103.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_SystemMessages" Width="1.5" PointX="3" PointY="166.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_TabModules" Width="1.5" PointX="10.25" PointY="126.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_TabModuleSettings" Width="1.5" PointX="12.5" PointY="127.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_TabPermission" Width="1.5" PointX="5.25" PointY="170.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Tabs" Width="1.5" PointX="3" PointY="169" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_UrlLog" Width="1.5" PointX="5.25" PointY="179.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Urls" Width="1.5" PointX="3" PointY="176" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_UrlTracking" Width="1.5" PointX="3" PointY="178.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_UserAuthentication" Width="1.5" PointX="8" PointY="73" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_UserDefinedData" Width="1.5" PointX="12.5" PointY="113.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_UserDefinedFields" Width="1.5" PointX="10.25" PointY="111.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_UserDefinedRows" Width="1.5" PointX="10.25" PointY="116.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_UserPortals" Width="1.5" PointX="8" PointY="77.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_UserProfile" Width="1.5" PointX="5.25" PointY="152.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_UserRoles" Width="1.5" PointX="7.5" PointY="117.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Users" Width="1.5" PointX="5.75" PointY="71.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_UsersOnline" Width="1.5" PointX="9" PointY="89.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_VendorClassification" Width="1.5" PointX="8.25" PointY="192.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Vendors" Width="1.5" PointX="3" PointY="190.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Version" Width="1.5" PointX="10.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Wiki_CommentParents" Width="1.5" PointX="12.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Wiki_Comments" Width="1.5" PointX="14.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Wiki_Settings" Width="1.5" PointX="0.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Wiki_Topic" Width="1.5" PointX="20.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Wiki_TopicHistory" Width="1.5" PointX="20.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_Xml_Parameter" Width="1.5" PointX="20.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_YourCompany_HelloWorld" Width="1.5" PointX="10.25" PointY="119" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_YourCompany_LogEntry" Width="1.5" PointX="10.25" PointY="121.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.Meljab_HappyCustomers" Width="1.5" PointX="20.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Common_BodyPartRecord" Width="1.5" PointX="21.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Common_CommonPartRecord" Width="1.5" PointX="2.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Common_CommonPartVersionRecord" Width="1.5" PointX="21.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Common_IdentityPartRecord" Width="1.5" PointX="16.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Containers_ContainablePartRecord" Width="1.5" PointX="22.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Containers_ContainerPartRecord" Width="1.5" PointX="8.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Containers_ContainerWidgetPartRecord" Width="1.5" PointX="22.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Containers_CustomPropertiesPartRecord" Width="1.5" PointX="10.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Navigation_AdminMenuPartRecord" Width="1.5" PointX="22.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Navigation_ContentMenuItemPartRecord" Width="1.5" PointX="22.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Navigation_MenuItemPartRecord" Width="1.5" PointX="22.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Navigation_MenuPartRecord" Width="1.5" PointX="22.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Navigation_MenuWidgetPartRecord" Width="1.5" PointX="23.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Alias_ActionRecord" Width="1.5" PointX="4.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Alias_AliasRecord" Width="1.5" PointX="12.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Autoroute_AutoroutePartRecord" Width="1.5" PointX="0.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Framework_ContentItemRecord" Width="1.5" PointX="24.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Framework_ContentItemVersionRecord" Width="1.5" PointX="24.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Framework_ContentTypeRecord" Width="1.5" PointX="24.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Framework_CultureRecord" Width="1.5" PointX="24.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Framework_DataMigrationRecord" Width="1.5" PointX="14.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Packaging_PackagingSource" Width="1.5" PointX="24.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Roles_PermissionRecord" Width="1.5" PointX="16.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Roles_RoleRecord" Width="1.5" PointX="18.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Roles_RolesPermissionsRecord" Width="1.5" PointX="24.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Roles_UserRolesPartRecord" Width="1.5" PointX="24.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Themes_ThemeSiteSettingsPartRecord" Width="1.5" PointX="25.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Users_RegistrationSettingsPartRecord" Width="1.5" PointX="20.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Orchard_Users_UserPartRecord" Width="1.5" PointX="22.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Scheduling_ScheduledTaskRecord" Width="1.5" PointX="24.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Settings_ContentFieldDefinitionRecord" Width="1.5" PointX="2.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Settings_ContentPartDefinitionRecord" Width="1.5" PointX="26.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Settings_ContentPartFieldDefinitionRecord" Width="1.5" PointX="4.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Settings_ContentTypeDefinitionRecord" Width="1.5" PointX="26.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Settings_ContentTypePartDefinitionRecord" Width="1.5" PointX="6.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Settings_ShellDescriptorRecord" Width="1.5" PointX="8.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Settings_ShellFeatureRecord" Width="1.5" PointX="26.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Settings_ShellFeatureStateRecord" Width="1.5" PointX="10.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Settings_ShellParameterRecord" Width="1.5" PointX="26.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Settings_ShellStateRecord" Width="1.5" PointX="26.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Settings_SiteSettings2PartRecord" Width="1.5" PointX="26.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Settings_SiteSettingsPartRecord" Width="1.5" PointX="26.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.orch_Title_TitlePartRecord" Width="1.5" PointX="26.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.sysdiagram" Width="1.5" PointX="27.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_vw_FolderPermissions" Width="1.5" PointX="12.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_vw_Lists" Width="1.5" PointX="14.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_vw_ModulePermissions" Width="1.5" PointX="16.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_vw_Modules" Width="1.5" PointX="28.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_vw_Portals" Width="1.5" PointX="28.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_vw_TabPermissions" Width="1.5" PointX="28.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_vw_Tabs" Width="1.5" PointX="24.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.dnn_vw_Users" Width="1.5" PointX="26.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.vw_aspnet_Applications" Width="1.5" PointX="28.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.vw_aspnet_MembershipUsers" Width="1.5" PointX="0.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.vw_aspnet_Profiles" Width="1.5" PointX="29.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.vw_aspnet_Roles" Width="1.5" PointX="2.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.vw_aspnet_Users" Width="1.5" PointX="4.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dotnetnukeModel.vw_aspnet_UsersInRoles" Width="1.5" PointX="6.75" PointY="29.75" IsExpanded="true" />
+        <AssociationConnector Association="dotnetnukeModel.FK__aspnet_Me__Appli__4F9CCB9E" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK__aspnet_Ro__Appli__6E2152BE" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK__aspnet_Us__Appli__3F6663D5" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK__aspnet_Me__UserI__5090EFD7" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK__aspnet_Pr__UserI__6497E884" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Affiliates_dnn_Vendors" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Announcements_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_AnonymousUsers_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_PackageAssemblies_PackageAssemblies" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Banner_dnn_Vendor" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Blog_Blogs_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Blog_Blogs_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Blog_Comments" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Classification_dnn_Classification" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_VendorClassification_dnn_Classification" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_ModuleDefinitions_dnn_DesktopModules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_PortalDesktopModules_dnn_DesktopModules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Documents_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_DocumentsSettings_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_EventLog_dnn_EventLogConfig" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_EventLog_dnn_EventLogTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_EventLogConfig_dnn_EventLogTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Events_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_EventsNotification_dnn_Events" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_EventsSignups_dnn_Events" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_EventsCategory_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_EventsLocation_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_EventsMaster_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_FAQs_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Files_dnn_Folders" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Files_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_FolderPermission_dnn_Folders" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_FolderPermission_dnn_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_FolderPermissiondnn_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Folders_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_HtmlText_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK__dnn_Links__Modul__7B4643B2" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Media_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_ModuleControls_dnn_ModuleDefinitions" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Modules_dnn_ModuleDefinitions" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_ModulePermission_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_ModulePermission_dnn_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_ModulePermissiondnn_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Modules_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_ModuleSettings_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_SearchItem_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Surveys_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_TabModules_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UserDefinedFields_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UserDefinedRows_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_YourCompany_HelloWorld_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_YourCompany_LogEntry_dnn_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_TabPermission_dnn_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_PortalAlias_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_PortalDesktopModules_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Profile_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_ProfilePropertyDefinition_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_RoleGroups_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Roles_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_SiteLog_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Skins_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_SystemMessages_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Tabs_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Urls_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UrlTracking_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UserPortals_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UsersOnline_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Vendor_dnn_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Profile_dnn_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UserProfile_dnn_ProfilePropertyDefinition" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Roles_dnn_RoleGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UserRoles_dnn_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_ScheduleHistory_dnn_Schedule" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_ScheduleItemSettings_dnn_Schedule" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_SearchItemWord_dnn_SearchItem" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_SearchItemWord_dnn_SearchWord" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_SearchItemWordPosition_dnn_SearchItemWord" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_SurveyOptions_dnn_Surveys" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_SurveyResults_dnn_SurveyOptions" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_TabModules_dnn_Tabs" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_TabModuleSettings_dnn_TabModules" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_TabPermission_dnn_Tabs" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_TabPermission_dnn_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_Tabs_dnn_Tabs" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UrlLog_dnn_UrlTracking" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UserAuthentication_dnn_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UserDefinedData_dnn_UserDefinedFields" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UserDefinedData_dnn_UserDefinedRows" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UserPortals_dnn_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UserProfile_dnn_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UserRoles_dnn_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_UsersOnline_dnn_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.FK_dnn_VendorClassification_dnn_Vendors" ManuallyRouted="false" />
+        <AssociationConnector Association="dotnetnukeModel.aspnet_UsersInRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
