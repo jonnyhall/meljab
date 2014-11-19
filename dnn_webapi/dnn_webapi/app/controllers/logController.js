@@ -23,20 +23,16 @@ app.controller('logController', ['$scope', '$location',  'logService', function 
             $scope.New = obj;
         }
 
-
-
         $scope.gridOptions = {
             data: 'logData',
+            rowHeight: 100,
             columnDefs: [
                 { field: 'EntryDate', displayName: 'EntryDate', width: '15%' },
-                { field: 'UserName', displayName: 'UserName', width: '15%' },                 
-                { field: 'Entry', displayName: 'Entry', width: '50%', height: '50%' },
+                { field: 'UserName', displayName: 'UserName', width: '15%' },
+                { field: 'Entry', displayName: 'Entry', width: '50%', cellTemplate: '<div ng-class="{ngRowLogs: true}"><p ng-bind-html="row.entity.Entry"></p></div>' },
                 { displayName: 'Options', cellTemplate: '<input type="button" ng-click="setScope(row.entity,\'edit\')" name="edit"  value="Edit">&nbsp;<input type="button" ng-click="Deletelog(row.entity.ItemID)"  name="delete"  value="Delete">', width: '25%' }
             ]
         };
-
-
-    //    $scope.$apply();
 
         $scope.update = function () {
             if ($scope.action == 'edit') {

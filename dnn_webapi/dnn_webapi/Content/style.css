@@ -1,7 +1,11 @@
 .gridStyle {
     border: 1px solid rgb(212,212,212);
     width: 800px; 
-    height: 300px;
+    height: auto;
+}
+.ngRowLogs {
+    height: 100px !important;
+    overflow-y: scroll  !important;
 }
 .ngTopPanel{
     height:auto !important;
