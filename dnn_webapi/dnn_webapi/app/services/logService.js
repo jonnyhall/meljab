@@ -10,6 +10,12 @@ app.factory('logService', ['$http', function ($http) {
         });
     };
 
+    var _getLogsSearch = function (keyword) {
+        return $http.get(serviceBase + '/?keyword=' + keyword).success(function (data) {
+            return data;
+        });
+    };
+
     var _insertlog = function (callback, log) {
         var log = { "Entry": log.Entry, "UserName": log.UserName };
         $http.post(serviceBase, log).success(callback);
@@ -25,6 +31,7 @@ app.factory('logService', ['$http', function ($http) {
     };
 
     logsServiceFactory.getLogs = _getLogs;
+    logsServiceFactory.search = _getLogsSearch;
     logsServiceFactory.insertlog = _insertlog;
     logsServiceFactory.updatelog = _updatelog;
     logsServiceFactory.deletelog = _deletelog;
