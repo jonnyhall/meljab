@@ -16,6 +16,15 @@ app.controller('logController', ['$scope', '$location',  'logService', function 
 
         }
 
+        function getLogSearch(keyword) {
+            logService.search(keyword).success(function (data) {
+                $scope.logData = data;
+            }, function (error) {
+                alert(error.data.message);
+            });
+
+        }
+
 
         $scope.setScope = function (obj, action) {
 
@@ -50,10 +59,11 @@ app.controller('logController', ['$scope', '$location',  'logService', function 
                 }, $scope.New)
 
             }
-
-
         }
 
+        $scope.SearchLogs = function (keyword) {
+            getLogSearch(keyword);
+        }
 
 
         $scope.Deletelog = function (id) {

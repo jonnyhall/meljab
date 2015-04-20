@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using domain_meljab;
 using domain_meljab.Abstract;
 using System.Data.Entity;
+using System.Web.Http;
 
 
 namespace domain_meljab.Concrete
@@ -44,7 +45,7 @@ namespace domain_meljab.Concrete
             return items;
         }
 
-       public IQueryable<dnn_YourCompany_LogEntry> Get(string keyWord)
+        public IQueryable<dnn_YourCompany_LogEntry> Get(string keyWord)
         {
             IQueryable<dnn_YourCompany_LogEntry> items = null;
             var transactionOptions = new System.Transactions.TransactionOptions();
@@ -57,9 +58,8 @@ namespace domain_meljab.Concrete
                     try
                     {
                         db.Configuration.ProxyCreationEnabled = false;
-                        items = db.dnn_YourCompany_LogEntry
-                             .Where(e => e.Entry.ToLower().Contains(keyWord.ToLower()))
-                            .ToList().AsQueryable<dnn_YourCompany_LogEntry>();
+                        items = db.dnn_YourCompany_LogEntry.Where(e => e.Entry.Contains(keyWord))
+                            .ToList().AsQueryable<dnn_YourCompany_LogEntry>();                    
                     }
                     catch (Exception e)
                     {
