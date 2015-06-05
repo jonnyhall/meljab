@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 using System.Configuration;
 using System.IO;
 using System.Security.Principal;
+using System.Net;
+using System.Net.Mail;
+using System.Net.Http;
+using System.Xml;
+using System.Text.RegularExpressions;
+using SchwabenCode.EasySmtp;
+
 
 namespace MeljabUtility
 {
@@ -36,10 +43,78 @@ namespace MeljabUtility
          
         }
 
+        
+
         private static void ExecuteCommand(string command)
         {
-            string path = string.Format(@"{0}\BatchFiles\{1}.bat", AppDomain.CurrentDomain.BaseDirectory, command.Replace(".txt", "").Replace(".gdoc",""));
-            System.Diagnostics.Process.Start(path);
+            var task = command.Replace(".txt", "").Replace(".gdoc", "");
+
+            if (!string.IsNullOrEmpty(task) && !task.ToLower().Contains("ipaddress"))
+            {
+                string path = string.Format(@"{0}\BatchFiles\{1}.bat", AppDomain.CurrentDomain.BaseDirectory, task);
+                System.Diagnostics.Process.Start(path);
+                return;
+            }
+
+            if (!string.IsNullOrEmpty(task) && task.ToLower().Contains("ipaddress")) {
+                var ipaddress = GETExternalIpAddress("http://checkip.dyndns.org");
+                SendEmail(ipaddress);
+            }
+        }
+
+        public static string GETExternalIpAddress(string url)
+        {
+            try
+            {
+                var data = GET(url);
+                var ipAddress = "Could not get ipaddress";
+                var dataXml = new XmlDocument();
+                if (!string.IsNullOrEmpty(data))
+                {
+                    dataXml.LoadXml(data);
+
+                    ipAddress = dataXml.SelectSingleNode("html/body").InnerText;
+                    return ipAddress;
+                }                
+
+                return ipAddress;
+            }
+            catch (Exception e)
+            {                
+                return e.Message;
+            }           
+        }
+
+        public static void SendEmail(string messageText)
+        {
+            MeljabCredentials meljabCredentials = new MeljabCredentials();
+            ICredentialsByHost creds = meljabCredentials.GetCredential();
+            SchwabenCode.EasySmtp.GMailSmtp gmailSmtp = new GMailSmtp(creds);
+            MailMessage mailMessage = new MailMessage("jonnyhall@hotmail.com", "meljab@gmail.com","From MeljabUtility: Your External IP Address", messageText);
+            gmailSmtp.Send(mailMessage);
+        }
+
+
+        public static string GET(string url)
+        {
+            try
+            {
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                Stream stream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(stream);
+
+                string data = reader.ReadToEnd();
+
+                reader.Close();
+                stream.Close();
+
+                return data;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }           
         }
     }
 }
