@@ -1,0 +1,16 @@
+C:\github\meljab\dnn_webapi\domain_meljab\bin\Debug\domain_meljab.dll.config
+C:\github\meljab\dnn_webapi\domain_meljab\bin\Debug\domain_meljab.dll
+C:\github\meljab\dnn_webapi\domain_meljab\bin\Debug\domain_meljab.pdb
+C:\github\meljab\dnn_webapi\domain_meljab\bin\Debug\EntityFramework.dll
+C:\github\meljab\dnn_webapi\domain_meljab\bin\Debug\EntityFramework.SqlServer.dll
+C:\github\meljab\dnn_webapi\domain_meljab\bin\Debug\EntityFramework.xml
+C:\github\meljab\dnn_webapi\domain_meljab\bin\Debug\EntityFramework.SqlServer.xml
+C:\github\meljab\dnn_webapi\domain_meljab\obj\Debug\domain_meljab.csprojResolveAssemblyReference.cache
+C:\github\meljab\dnn_webapi\domain_meljab\obj\Debug\domain_meljab.dll
+C:\github\meljab\dnn_webapi\domain_meljab\obj\Debug\domain_meljab.pdb
+C:\github\meljab\dnn_webapi\domain_meljab\bin\Debug\System.Web.Http.dll
+C:\github\meljab\dnn_webapi\domain_meljab\bin\Debug\System.Net.Http.Formatting.dll
+C:\github\meljab\dnn_webapi\domain_meljab\bin\Debug\Newtonsoft.Json.dll
+C:\github\meljab\dnn_webapi\domain_meljab\bin\Debug\System.Web.Http.xml
+C:\github\meljab\dnn_webapi\domain_meljab\bin\Debug\System.Net.Http.Formatting.xml
+C:\github\meljab\dnn_webapi\domain_meljab\bin\Debug\Newtonsoft.Json.xml

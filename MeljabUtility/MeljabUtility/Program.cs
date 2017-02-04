@@ -20,7 +20,8 @@ namespace MeljabUtility
     {
         static void Main(string[] args)
         {
-            CheckAndExecuteUtilFolder();
+           CheckAndExecuteUtilFolder();
+
         }
 
         private static void CheckAndExecuteUtilFolder()
@@ -85,12 +86,22 @@ namespace MeljabUtility
             }           
         }
 
+        public static void SendEmail(string from, string to, string subject, string messageText)
+        {
+            MeljabCredentials meljabCredentials = new MeljabCredentials();
+            ICredentialsByHost creds = meljabCredentials.GetCredential();
+            SchwabenCode.EasySmtp.GMailSmtp gmailSmtp = new GMailSmtp(creds);
+            MailMessage mailMessage = new MailMessage(from, to, subject, messageText);
+            gmailSmtp.Send(mailMessage);
+        }
+
+
         public static void SendEmail(string messageText)
         {
             MeljabCredentials meljabCredentials = new MeljabCredentials();
             ICredentialsByHost creds = meljabCredentials.GetCredential();
             SchwabenCode.EasySmtp.GMailSmtp gmailSmtp = new GMailSmtp(creds);
-            MailMessage mailMessage = new MailMessage("jonnyhall@hotmail.com", "meljab@gmail.com","From MeljabUtility: Your External IP Address", messageText);
+            MailMessage mailMessage = new MailMessage("jonnyhall@hotmail.com", "meljab@gmail.com", "From MeljabUtility: Your External IP Address", messageText);
             gmailSmtp.Send(mailMessage);
         }
 

@@ -9,3 +9,7 @@ C:\github\meljab\MeljabUtility\MeljabUtility\bin\Debug\Newtonsoft.Json.dll
 C:\github\meljab\MeljabUtility\MeljabUtility\bin\Debug\Newtonsoft.Json.xml
 C:\github\meljab\MeljabUtility\MeljabUtility\bin\Debug\SchwabenCode.EasySmtp.dll
 C:\github\meljab\MeljabUtility\MeljabUtility\bin\Debug\SchwabenCode.EasySmtp.xml
+C:\github\meljab\MeljabUtility\MeljabUtility\bin\Debug\Microsoft.Activities.dll
+C:\github\meljab\MeljabUtility\MeljabUtility\bin\Debug\System.Net.Http.Formatting.dll
+C:\github\meljab\MeljabUtility\MeljabUtility\bin\Debug\Microsoft.Activities.xml
+C:\github\meljab\MeljabUtility\MeljabUtility\bin\Debug\System.Net.Http.Formatting.xml

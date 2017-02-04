@@ -1,0 +1,1080 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SchwabenCode.EasySmtp</name>
+    </assembly>
+    <members>
+        <member name="T:SchwabenCode.EasySmtp.IEasySmtp">
+            <summary>
+            General Interface for EasySmtp
+            </summary>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.IEasySmtp.Send(System.Net.Mail.MailMessage)">
+            <summary>
+            Sends the mail message trough the current <see cref="P:SchwabenCode.EasySmtp.EasySmtp.NativeSmtpClient"/> instance.
+            </summary>
+            <param name="mailMessage">Mailmessage to send</param>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.IEasySmtp.Send(System.Collections.Generic.IEnumerable{System.Net.Mail.MailMessage})">
+            <summary>
+            Sends the mail messages trough the current <see cref="P:SchwabenCode.EasySmtp.EasySmtp.NativeSmtpClient"/> instance.
+            </summary>
+            <param name="mailMessages">Mailmessages to send</param>
+            <example>
+            using(IEasySmtp easySmtp = new GoogleSmt</example>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.IEasySmtp.SmptServer">
+            <summary>
+            SmptPort
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.IEasySmtp.SmtpPort">
+            <summary>
+            SmptPort
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.IEasySmtp.SslEnabled">
+            <summary>
+            SslMode
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.IEasySmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod
+            </summary>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.EasySmtp.Dispose">
+            <summary>
+            Dispose Implementation
+            </summary>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.EasySmtp.Send(System.Net.Mail.MailMessage)">
+            <summary>
+            Sends the mail message trough the current <see cref="P:SchwabenCode.EasySmtp.EasySmtp.NativeSmtpClient"/> instance.
+            </summary>
+            <param name="mailMessage">Mailmessage to send</param>
+            <example>
+            using( IEasySmtp easySmtp = new GMailMailer( myCredentials ) )
+            {
+                easySmtp.Send( myMailMessage );
+            }
+            </example>
+            <exception cref="T:System.ObjectDisposedException">Current Instance already disposed.</exception>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.EasySmtp.Send(System.Collections.Generic.IEnumerable{System.Net.Mail.MailMessage})">
+            <summary>
+            Sends the mail messages trough the current <see cref="P:SchwabenCode.EasySmtp.EasySmtp.NativeSmtpClient"/> instance.
+            </summary>
+            <param name="mailMessages">Mailmessages to send</param>
+            <example>
+            using( IEasySmtp easySmtp = new GMailMailer( myCredentials ) )
+            {
+                easySmtp.Send( myMailMessages );
+            }
+            </example>
+            <exception cref="T:System.ObjectDisposedException">Current Instance already disposed.</exception>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.EasySmtp.Dispose(System.Boolean)">
+            <summary>
+            Standard Dipose implementation
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.EasySmtp.SmptServer">
+            <summary>
+            SmptPort
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.EasySmtp.SmtpPort">
+            <summary>
+            SmptPort
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.EasySmtp.SslEnabled">
+            <summary>
+            SslMode
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.EasySmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.EasySmtp.NativeSmtpClient">
+            <summary>
+            Native SmtpClient instance
+            </summary>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.CentronSmtp">
+            <summary>
+            Mailer for www.centron.de
+            </summary>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.CentronSmtp.#ctor(System.Net.ICredentialsByHost,System.String)">
+            <summary>
+            Mailer for Centron
+            </summary>
+            <param name="credentials">Your credentials</param>
+            <param name="privateSmptHost">private SMTP Host (ex. mail.your-domain.com)</param>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.CustomSmtp">
+            <summary>
+            Mailer for Custom SMTP
+            </summary>
+            <example>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@gmail.com", "mypass" );
+            
+            // Create EasySmtp Instance
+            sing( IEasySmtp easySmtp = new GMailSmtp( myCredentials ) )
+            
+               // Create Message
+               var myMessage = new MailMessage( );
+               {
+                   myMessage.From = new MailAddress( "mymail@gmail.com" );
+            
+                   myMessage.To.Add( new MailAddress( "recipient@gmail.com" ) );
+                   myMessage.Subject = "Sendmail with GMail";
+                   myMessage.Body = "Succeeded";
+            
+                   // Send
+                   easySmtp.Send( myMessage );
+               }
+            </example>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.CustomSmtp.#ctor(System.String,System.Int32,System.Net.ICredentialsByHost,System.Net.Mail.SmtpDeliveryMethod,System.Boolean)">
+            <summary>
+            Mailer for Centron
+            </summary>
+            <param name="host">Your SMTP Host</param>
+            <param name="port">Port (normally 25 or 587 (ssl))</param>
+            <param name="credentials">Your Credentials</param>
+            <param name="deliveryMethod">DeliveryMethod (should be 'Network' normally).</param>
+            <param name="sslEnabled">SSL Mode</param>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.OutlookSmtp">
+            <summary>
+            SMTP for Outlook
+            </summary>
+            <example>This shows the simple usage of OutlookSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@Outlook.com", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new OutlookSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@Outlook.com" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@Outlook.com" ) );
+            		myMessage.Subject = "Sendmail with Outlook";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.OutlookSmtp.#ctor(System.Net.ICredentialsByHost)">
+            <summary>
+            SMTP for Outlook
+            </summary>
+            <param name="credentials">Your credentials</param>
+            <example>This shows the simple usage of OutlookSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@Outlook.com", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new OutlookSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@Outlook.com" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@Outlook.com" ) );
+            		myMessage.Subject = "Sendmail with Outlook";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.OutlookSmtp.SmptServer">
+            <summary>
+            SmptServer configured for Outlook
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.OutlookSmtp.SmtpPort">
+            <summary>
+            SmptPort configured for Outlook
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.OutlookSmtp.SslEnabled">
+            <summary>
+            SslMode configured for Outlook
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.OutlookSmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod configured for Outlook
+            </summary>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.AOLSmtp">
+            <summary>
+            SMTP for AOL
+            </summary>
+            <example>This shows the simple usage of AOLSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@aol.com", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new AOLSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@aol.com" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@aol.com" ) );
+            		myMessage.Subject = "Sendmail with AOL";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.AOLSmtp.#ctor(System.Net.ICredentialsByHost)">
+            <summary>
+            SMTP for AOL
+            </summary>
+            <param name="credentials">Your credentials</param>
+            <example>This shows the simple usage of AOLSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@aol.com", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new AOLSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@aol.com" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@aol.com" ) );
+            		myMessage.Subject = "Sendmail with AOL";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.AOLSmtp.SmptServer">
+            <summary>
+            SmptServer configured for AOL
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.AOLSmtp.SmtpPort">
+            <summary>
+            SmptPort configured for AOL
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.AOLSmtp.SslEnabled">
+            <summary>
+            SslMode configured for AOL
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.AOLSmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod configured for AOL
+            </summary>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.AIMSmtp">
+            <summary>
+            SMTP for AIM
+            </summary>
+            <example>This shows the simple usage of AIMSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@aimcom", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new AIMSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@aimcom" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@aimcom" ) );
+            		myMessage.Subject = "Sendmail with AIM";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.AIMSmtp.#ctor(System.Net.ICredentialsByHost)">
+            <summary>
+            SMTP for AIM
+            </summary>
+            <param name="credentials">Your credentials</param>
+            <example>This shows the simple usage of AIMSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@aimcom", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new AIMSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@aimcom" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@aimcom" ) );
+            		myMessage.Subject = "Sendmail with AIM";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.AIMSmtp.SmptServer">
+            <summary>
+            SmptServer configured for AIM
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.AIMSmtp.SmtpPort">
+            <summary>
+            SmptPort configured for AIM
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.AIMSmtp.SslEnabled">
+            <summary>
+            SslMode configured for AIM
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.AIMSmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod configured for AIM
+            </summary>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.ArcorSmtp">
+            <summary>
+            SMTP for Arcor
+            </summary>
+            <example>This shows the simple usage of ArcorSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@arcor.de", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new ArcorSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@arcor.de" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@arcor.de" ) );
+            		myMessage.Subject = "Sendmail with Arcor";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.ArcorSmtp.#ctor(System.Net.ICredentialsByHost)">
+            <summary>
+            SMTP for Arcor
+            </summary>
+            <param name="credentials">Your credentials</param>
+            <example>This shows the simple usage of ArcorSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@arcor.de", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new ArcorSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@arcor.de" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@arcor.de" ) );
+            		myMessage.Subject = "Sendmail with Arcor";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.ArcorSmtp.SmptServer">
+            <summary>
+            SmptServer configured for Arcor
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.ArcorSmtp.SmtpPort">
+            <summary>
+            SmptPort configured for Arcor
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.ArcorSmtp.SslEnabled">
+            <summary>
+            SslMode configured for Arcor
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.ArcorSmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod configured for Arcor
+            </summary>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.FreenetSmtp">
+            <summary>
+            SMTP for Freenet
+            </summary>
+            <example>This shows the simple usage of FreenetSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@freenet.de", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new FreenetSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@freenet.de" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@freenet.de" ) );
+            		myMessage.Subject = "Sendmail with Freenet";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.FreenetSmtp.#ctor(System.Net.ICredentialsByHost)">
+            <summary>
+            SMTP for Freenet
+            </summary>
+            <param name="credentials">Your credentials</param>
+            <example>This shows the simple usage of FreenetSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@freenet.de", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new FreenetSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@freenet.de" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@freenet.de" ) );
+            		myMessage.Subject = "Sendmail with Freenet";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.FreenetSmtp.SmptServer">
+            <summary>
+            SmptServer configured for Freenet
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.FreenetSmtp.SmtpPort">
+            <summary>
+            SmptPort configured for Freenet
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.FreenetSmtp.SslEnabled">
+            <summary>
+            SslMode configured for Freenet
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.FreenetSmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod configured for Freenet
+            </summary>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.GMailSmtp">
+            <summary>
+            SMTP for GMail
+            </summary>
+            <example>This shows the simple usage of GMailSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@gmail.com", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new GMailSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@gmail.com" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@gmail.com" ) );
+            		myMessage.Subject = "Sendmail with GMail";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.GMailSmtp.#ctor(System.Net.ICredentialsByHost)">
+            <summary>
+            SMTP for GMail
+            </summary>
+            <param name="credentials">Your credentials</param>
+            <example>This shows the simple usage of GMailSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@gmail.com", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new GMailSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@gmail.com" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@gmail.com" ) );
+            		myMessage.Subject = "Sendmail with GMail";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.GMailSmtp.SmptServer">
+            <summary>
+            SmptServer configured for GMail
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.GMailSmtp.SmtpPort">
+            <summary>
+            SmptPort configured for GMail
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.GMailSmtp.SslEnabled">
+            <summary>
+            SslMode configured for GMail
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.GMailSmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod configured for GMail
+            </summary>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.GMXSmtp">
+            <summary>
+            SMTP for GMX
+            </summary>
+            <example>This shows the simple usage of GMXSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@gmx.de", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new GMXSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@gmx.de" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@gmx.de" ) );
+            		myMessage.Subject = "Sendmail with GMX";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.GMXSmtp.#ctor(System.Net.ICredentialsByHost)">
+            <summary>
+            SMTP for GMX
+            </summary>
+            <param name="credentials">Your credentials</param>
+            <example>This shows the simple usage of GMXSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@gmx.de", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new GMXSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@gmx.de" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@gmx.de" ) );
+            		myMessage.Subject = "Sendmail with GMX";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.GMXSmtp.SmptServer">
+            <summary>
+            SmptServer configured for GMX
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.GMXSmtp.SmtpPort">
+            <summary>
+            SmptPort configured for GMX
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.GMXSmtp.SslEnabled">
+            <summary>
+            SslMode configured for GMX
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.GMXSmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod configured for GMX
+            </summary>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.ICloudSmtp">
+            <summary>
+            SMTP for ICloud
+            </summary>
+            <example>This shows the simple usage of ICloudSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@icloud.com", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new ICloudSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@icloud.com" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@icloud.com" ) );
+            		myMessage.Subject = "Sendmail with ICloud";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.ICloudSmtp.#ctor(System.Net.ICredentialsByHost)">
+            <summary>
+            SMTP for ICloud
+            </summary>
+            <param name="credentials">Your credentials</param>
+            <example>This shows the simple usage of ICloudSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@icloud.com", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new ICloudSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@icloud.com" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@icloud.com" ) );
+            		myMessage.Subject = "Sendmail with ICloud";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.ICloudSmtp.SmptServer">
+            <summary>
+            SmptServer configured for ICloud
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.ICloudSmtp.SmtpPort">
+            <summary>
+            SmptPort configured for ICloud
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.ICloudSmtp.SslEnabled">
+            <summary>
+            SslMode configured for ICloud
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.ICloudSmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod configured for ICloud
+            </summary>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.MailDeSmtp">
+            <summary>
+            SMTP for MailDe
+            </summary>
+            <example>This shows the simple usage of MailDeSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@mail.de", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new MailDeSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@mail.de" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@mail.de" ) );
+            		myMessage.Subject = "Sendmail with MailDe";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.MailDeSmtp.#ctor(System.Net.ICredentialsByHost)">
+            <summary>
+            SMTP for MailDe
+            </summary>
+            <param name="credentials">Your credentials</param>
+            <example>This shows the simple usage of MailDeSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@mail.de", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new MailDeSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@mail.de" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@mail.de" ) );
+            		myMessage.Subject = "Sendmail with MailDe";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.MailDeSmtp.SmptServer">
+            <summary>
+            SmptServer configured for MailDe
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.MailDeSmtp.SmtpPort">
+            <summary>
+            SmptPort configured for MailDe
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.MailDeSmtp.SslEnabled">
+            <summary>
+            SslMode configured for MailDe
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.MailDeSmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod configured for MailDe
+            </summary>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.WebDeSmtp">
+            <summary>
+            SMTP for WebDe
+            </summary>
+            <example>This shows the simple usage of WebDeSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@web.de", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new WebDeSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@web.de" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@web.de" ) );
+            		myMessage.Subject = "Sendmail with WebDe";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.WebDeSmtp.#ctor(System.Net.ICredentialsByHost)">
+            <summary>
+            SMTP for WebDe
+            </summary>
+            <param name="credentials">Your credentials</param>
+            <example>This shows the simple usage of WebDeSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@web.de", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new WebDeSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@web.de" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@web.de" ) );
+            		myMessage.Subject = "Sendmail with WebDe";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.WebDeSmtp.SmptServer">
+            <summary>
+            SmptServer configured for WebDe
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.WebDeSmtp.SmtpPort">
+            <summary>
+            SmptPort configured for WebDe
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.WebDeSmtp.SslEnabled">
+            <summary>
+            SslMode configured for WebDe
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.WebDeSmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod configured for WebDe
+            </summary>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.YahooSmtp">
+            <summary>
+            SMTP for Yahoo
+            </summary>
+            <example>This shows the simple usage of YahooSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@yahoo.com", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new YahooSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@yahoo.com" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@yahoo.com" ) );
+            		myMessage.Subject = "Sendmail with Yahoo";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.YahooSmtp.#ctor(System.Net.ICredentialsByHost)">
+            <summary>
+            SMTP for Yahoo
+            </summary>
+            <param name="credentials">Your credentials</param>
+            <example>This shows the simple usage of YahooSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@yahoo.com", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new YahooSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@yahoo.com" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@yahoo.com" ) );
+            		myMessage.Subject = "Sendmail with Yahoo";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.YahooSmtp.SmptServer">
+            <summary>
+            SmptServer configured for Yahoo
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.YahooSmtp.SmtpPort">
+            <summary>
+            SmptPort configured for Yahoo
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.YahooSmtp.SslEnabled">
+            <summary>
+            SslMode configured for Yahoo
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.YahooSmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod configured for Yahoo
+            </summary>
+        </member>
+        <member name="T:SchwabenCode.EasySmtp.TOnlineSmtp">
+            <summary>
+            SMTP for TOnline
+            </summary>
+            <example>This shows the simple usage of TOnlineSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@t-online.de", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new TOnlineSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@t-online.de" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@t-online.de" ) );
+            		myMessage.Subject = "Sendmail with TOnline";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:SchwabenCode.EasySmtp.TOnlineSmtp.#ctor(System.Net.ICredentialsByHost)">
+            <summary>
+            SMTP for TOnline
+            </summary>
+            <param name="credentials">Your credentials</param>
+            <example>This shows the simple usage of TOnlineSmtp
+            <code>
+            // Define Credential
+            var myCredentials = new NetworkCredential( "mymail@t-online.de", "mypass" );
+            
+            // Create EasySmtp Instance
+            using( IEasySmtp easySmtp = new TOnlineSmtp( myCredentials ) )
+            {
+            	// Create Message
+            	var myMessage = new MailMessage( );
+            	{
+            		myMessage.From = new MailAddress( "mymail@t-online.de" );
+            
+            		myMessage.To.Add( new MailAddress( "recipient@t-online.de" ) );
+            		myMessage.Subject = "Sendmail with TOnline";
+            		myMessage.Body = "Succeeded";
+            
+            		// Send
+            		easySmtp.Send( myMessage );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.TOnlineSmtp.SmptServer">
+            <summary>
+            SmptServer configured for TOnline
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.TOnlineSmtp.SmtpPort">
+            <summary>
+            SmptPort configured for TOnline
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.TOnlineSmtp.SslEnabled">
+            <summary>
+            SslMode configured for TOnline
+            </summary>
+        </member>
+        <member name="P:SchwabenCode.EasySmtp.TOnlineSmtp.DeliveryMethod">
+            <summary>
+            DeliveryMethod configured for TOnline
+            </summary>
+        </member>
+    </members>
+</doc>

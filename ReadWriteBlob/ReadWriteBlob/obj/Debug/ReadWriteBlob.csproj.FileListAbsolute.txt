@@ -1,0 +1,7 @@
+C:\github\meljab\ReadWriteBlob\ReadWriteBlob\obj\Debug\ReadWriteBlob.exe
+C:\github\meljab\ReadWriteBlob\ReadWriteBlob\obj\Debug\ReadWriteBlob.pdb
+C:\github\meljab\ReadWriteBlob\ReadWriteBlob\bin\Debug\ReadWriteBlob.exe
+C:\github\meljab\ReadWriteBlob\ReadWriteBlob\bin\Debug\ReadWriteBlob.pdb
+C:\github\meljab\ReadWriteBlob\ReadWriteBlob\obj\Debug\ReadWriteBlob.csprojResolveAssemblyReference.cache
+C:\github\meljab\ReadWriteBlob\ReadWriteBlob\obj\Debug\Akadia.ReadWriteBlob.BlobSample.resources
+C:\github\meljab\ReadWriteBlob\ReadWriteBlob\obj\Debug\ReadWriteBlob.csproj.GenerateResource.Cache
