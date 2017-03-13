@@ -1,0 +1,8 @@
+E:\codingSandbox\CodingTest_csvToJson\CodingTest_csvToJson\bin\Debug\CodingTest_csvToJson.exe.config
+E:\codingSandbox\CodingTest_csvToJson\CodingTest_csvToJson\obj\Debug\CodingTest_csvToJson.csprojResolveAssemblyReference.cache
+E:\codingSandbox\CodingTest_csvToJson\CodingTest_csvToJson\bin\Debug\CodingTest_csvToJson.exe
+E:\codingSandbox\CodingTest_csvToJson\CodingTest_csvToJson\bin\Debug\CodingTest_csvToJson.pdb
+E:\codingSandbox\CodingTest_csvToJson\CodingTest_csvToJson\bin\Debug\Newtonsoft.Json.dll
+E:\codingSandbox\CodingTest_csvToJson\CodingTest_csvToJson\bin\Debug\Newtonsoft.Json.xml
+E:\codingSandbox\CodingTest_csvToJson\CodingTest_csvToJson\obj\Debug\CodingTest_csvToJson.exe
+E:\codingSandbox\CodingTest_csvToJson\CodingTest_csvToJson\obj\Debug\CodingTest_csvToJson.pdb
