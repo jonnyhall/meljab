@@ -18,7 +18,7 @@ namespace MeljabUtility
 
         public NetworkCredential GetCredential(string host, int port, string authenticationType)
         {
-            var networkCredential = new NetworkCredential("meljab@gmail.com", "d1w1sa1#");
+            var networkCredential = new NetworkCredential("", "");
             return networkCredential;
         }
     }
