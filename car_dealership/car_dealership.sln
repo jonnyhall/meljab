@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "car_dealershipWebAPI", "car_dealershipWebAPI\car_dealershipWebAPI.csproj", "{B4C4B8B7-D82A-412B-AB53-8F9FEDBD94AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "car_dealershipWebAPI.Tests", "car_dealershipWebAPI.Tests\car_dealershipWebAPI.Tests.csproj", "{2886A399-8479-4C63-AA3B-AF1C9316551A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4C4B8B7-D82A-412B-AB53-8F9FEDBD94AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C4B8B7-D82A-412B-AB53-8F9FEDBD94AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C4B8B7-D82A-412B-AB53-8F9FEDBD94AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C4B8B7-D82A-412B-AB53-8F9FEDBD94AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2886A399-8479-4C63-AA3B-AF1C9316551A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2886A399-8479-4C63-AA3B-AF1C9316551A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2886A399-8479-4C63-AA3B-AF1C9316551A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2886A399-8479-4C63-AA3B-AF1C9316551A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
