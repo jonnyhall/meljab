@@ -1,5 +1,5 @@
 ﻿================================================================================
-==       iTrellis React.js/C#  Test Project by Jon Hall						  ==
+==       React.js/C#  Test Project by Jon Hall						  ==
 ================================================================================
 
 The VehicleInventoryTable.jsx file is where the majority of the React.js logic 
@@ -11,9 +11,6 @@ since I have not used React.js professionally before.
 However, since beginning and progressing through the different stages of development 
 using React.js, I have come to appreciate its simplicity and speed. 
 
-After working on this project, my confidence in using React.js has increased 
-dramatically and even if I am not selected as a candidate to work for iTrellis,
-I will continue learning more about React.js. 
 
 This is a cross-platform project template built on top of the Facebook's React.js
 library and powered by Node.js-based development tools and utilities (it requires

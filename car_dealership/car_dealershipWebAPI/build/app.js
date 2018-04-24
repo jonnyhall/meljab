@@ -25798,7 +25798,7 @@
 	        React.DOM.div({className: "container"}, 
 	          Link({className: "navbar-brand row", to: "home"}, 
 	            React.DOM.img({src: this.url() + '/images/logo-small.png', width: "38", height: "38", alt: "React"}), 
-	            ' iTrellis ReactJS/C# Test Project by Jon Hall'
+	            ' ReactJS/C# Test Project by Jon Hall'
 	          )
 	        )
 	      )
